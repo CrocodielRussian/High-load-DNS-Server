@@ -109,6 +109,22 @@ Main artifacts:
 - `build/libs/DnsLB4J-1.0-SNAPSHOT-jar-with-dependencies.jar`;
 - `build/distributions/DnsLB4J-1.0-SNAPSHOT-package.zip`.
 
+## CI/CD
+
+The GitHub Actions workflow in `.github/workflows/ci-cd.yml`:
+
+- builds and tests the project on pull requests and pushes to `main`;
+- validates the Gradle Wrapper and caches Gradle dependencies;
+- stores the executable JAR and distribution ZIP as workflow artifacts;
+- creates a GitHub Release with both artifacts when a `v*` tag is pushed.
+
+To publish a release:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
 ## Run
 
 ```bash
