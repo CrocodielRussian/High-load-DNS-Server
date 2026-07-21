@@ -13,6 +13,19 @@ A high-performance, non-blocking DNS proxy built with Java 21, Netty 4.2, and Ca
 - Caffeine cache with size limits, DNS TTL expiration, and TTL aging;
 - aggregated metrics without per-request logging.
 
+## Technology Stack
+
+- **Java 21** — records, modern language features, and current JVM runtime;
+- **Netty 4.2** — asynchronous event-driven networking and UDP pipelines;
+- **Java NIO, Linux epoll, and SO_REUSEPORT** — scalable per-core network I/O;
+- **Caffeine** — memory-bounded and TTL-aware DNS response caching;
+- **Gradle Kotlin DSL** — reproducible builds, testing, and application packaging;
+- **JUnit 5** — unit and integration testing;
+- **SLF4J and Logback** — structured application logging;
+- **Git and Conventional Commits** — version control and structured history.
+
+The project applies high-load backend practices such as non-blocking I/O, event loops, channel reuse, bounded in-flight requests, backpressure, single-flight query coalescing, active and passive health checks, automatic failover, graceful shutdown, and aggregated runtime metrics.
+
 ## Architecture
 
 ```mermaid
