@@ -1,4 +1,4 @@
-# DnsLB4J
+# High-load DNS Server
 
 A high-performance, non-blocking DNS proxy built with Java 21, Netty 4.2, and Caffeine. The server accepts UDP queries, forwards them to primary or backup DNS servers, validates responses, and caches them according to DNS TTL values.
 
