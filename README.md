@@ -49,7 +49,7 @@ Request processing remains inside the event loop: the server does not create a t
 ## Project Structure
 
 ```text
-src/main/java/com/snail/dnslb4j/
+src/main/java/com/mikle/dns/
 ├── DnsServer.java              # application entry point and lifecycle
 ├── config/ServerConfig.java    # config.ini loading and validation
 ├── server/                     # UDP listeners and request-processing pipeline
@@ -58,7 +58,7 @@ src/main/java/com/snail/dnslb4j/
 ├── cache/                      # Caffeine adapter for DNS responses
 └── metrics/                    # aggregated runtime metrics
 
-src/test/java/com/snail/dnslb4j/
+src/test/java/com/mikle/dns/
 ├── config/                     # configuration tests
 ├── dns/                        # DNS wire-format tests
 ├── server/                     # proxy integration tests

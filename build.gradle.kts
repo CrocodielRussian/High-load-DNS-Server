@@ -9,7 +9,7 @@ plugins {
     application
 }
 
-group = "com.snail"
+group = "com.mikle"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -34,7 +34,7 @@ dependencies {
 }
 
 application {
-    mainClass = "com.snail.dnslb4j.DnsServer"
+    mainClass = "com.mikle.dns.DnsServer"
 }
 
 tasks.withType<JavaCompile>().configureEach {
